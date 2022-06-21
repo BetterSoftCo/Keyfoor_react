@@ -1,0 +1,26 @@
+.profile-card-parent {
+  width: 100%;
+  max-width: 380px;
+  display: flex;
+  align-items: center;
+  min-width: none;
+  max-height: fit-content;
+  padding: 10px 20px;
+  border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+  &:nth-child(odd) {
+    border-left: 1px solid rgba(120, 120, 120, 0.2);
+  }
+  .avatar {
+    vertical-align: middle;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 1rem;
+  }
+  .info-profile {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+}

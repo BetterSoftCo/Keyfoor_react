@@ -1,0 +1,19 @@
+.button-icon {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    background-color: #FF8A00;
+    position: relative;
+    .title {
+        @include TextStyleFA(auto, auto, 700, 14px, #FFFFFF);
+        margin: 0;
+    }
+    .icon-arrow {
+        position: absolute;
+        left: 65%;
+    }
+}

@@ -1,0 +1,370 @@
+@import "../base/mixins";
+.profile-Setting-Page {
+    height: max-content;
+    margin-top: 20px;
+    width: 100%;
+    .profile-Setting-Options {
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(2, minmax(380px, 1fr));
+        grid-column-gap: 80px;
+        grid-row-gap: 20px;
+        max-width: 840px;
+        a {
+            max-width: 380px;
+            text-decoration: none;
+        }
+    }
+
+    .profile-Option {
+        width: 28vw;
+        max-width: 380px;
+        min-width: fit-content;
+        height: 50px;
+        button {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: right;
+            color: #00de8e;
+        }
+    }
+
+    .user-id {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: left;
+        color: #787878;
+        margin-right: 35px;
+    }
+    .signout-Btn {
+        display: none;
+    }
+    .edit-Input-Container {
+        background: #fafafa;
+        border: 1px solid #d6d6d6;
+        border-radius: 10px;
+        width: 35vw;
+        max-width: 380px;
+    }
+    .edit-Input {
+        @include InputStyle;
+    }
+    .user-Info {
+        width: 90vw;
+        max-width: 380px;
+        display: none;
+    }
+    .user-Info-Desctop {
+        display: flex;
+    }
+    .change-Profile {
+        margin: 50px 0;
+    }
+    .edit-Input-2 {
+        @include InputStyle;
+        border-top: 1px solid rgba(214, 214, 214, 0.5);
+    }
+    .edit-Form-Container {
+        width: 100% !important;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        max-width: 800px;
+        input {
+            &::placeholder {
+                padding: 15px;
+            }
+        }
+        .input-text {
+            &::placeholder {
+                text-align: left;
+            }
+        }
+        select {
+            padding: 15px;
+        }
+        label {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #787878;
+        }
+    }
+    .birthday {
+        border-left: 1px solid rgba(214, 214, 214, 0.5);
+    }
+    .register-Change {
+        margin-right: 25%;
+        width: 180px;
+        height: 50px;
+        background: #00de8e;
+        box-shadow: 0px 0px 20px rgba(0, 222, 142, 0.5);
+        border-radius: 10px;
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .email-Error {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: right;
+        color: #ff8a00;
+        width: 380px !important;
+        margin-right: 110px;
+    }
+    .radio-Btn {
+        width: 20px;
+        height: 20px;
+        background-color: #f3f3f3;
+        border: 1px solid #d6d6d6;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .active-Radio {
+        background-color: #00de8e;
+        box-shadow: 0px 0px 10px rgba(0, 222, 142, 0.5);
+        cursor: pointer;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+    }
+    .radio-Label {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: #787878;
+    }
+    .radio-desc {
+        margin-right: 35px;
+        span {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: justify;
+            color: #787878;
+        }
+    }
+    .input-Label {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: right;
+        color: #787878;
+    }
+    .privacy-Setting {
+        width: 75vw;
+        max-width: 840px;
+        input {
+            border: none !important;
+        }
+    }
+    .numOf-Active-Sessions {
+        width: 22px;
+        height: 15px;
+        background: #00de8e;
+        border-radius: 10px;
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: #ffffff;
+    }
+    .active-Sessions {
+        width: 90vw;
+        max-width: 380px;
+        border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+        div {
+            border-bottom: 3px solid #00de8e;
+            padding: 10px;
+        }
+    }
+    .sessions-Name {
+        span {
+            &:first-child {
+                font-family: "Sora";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: right;
+                margin-bottom: 10px;
+                color: #787878;
+            }
+            &:last-child {
+                font-family: "Sora";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 15px;
+                text-align: right;
+
+                color: #787878;
+            }
+        }
+    }
+    .sessions {
+        min-height: 70px;
+        border-top: 1px solid rgba(120, 120, 120, 0.2);
+
+        .avatar-Group {
+            img {
+                width: 40px;
+                height: 40px;
+                padding: 8px;
+            }
+        }
+        .avatar-Chat {
+            border: 2px solid #ff8a00;
+            border-radius: 50%;
+        }
+        .group-name {
+            span {
+                &:first-child {
+                    font-family: "IRANYekanWeb";
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 12px;
+                    line-height: 17px;
+                    text-align: center;
+                    color: #787878;
+                }
+            }
+            .numOfNotSeen {
+                font-family: "IRANYekanWeb";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 17px;
+                text-align: center;
+                color: #ffffff;
+                width: 22px;
+                height: 15px;
+                background: #ff8a00;
+                border-radius: 10px;
+            }
+        }
+        .messageText {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: right;
+            color: #787878;
+        }
+    }
+    @media (max-width: 991px) {
+        width: 100%;
+        padding-bottom: 60px;
+        .user-Info {
+            display: flex;
+            max-width: none;
+        }
+        .user-Info-Desctop {
+            display: none;
+        }
+        .change-Profile {
+            margin: 30px 0;
+        }
+        .active-Sessions {
+            max-width: none;
+        }
+        .one {
+            order: 1;
+        }
+        .two {
+            order: 2;
+        }
+        .three {
+            order: 3;
+        }
+        .four {
+            order: 4;
+        }
+        .five {
+            order: 5;
+        }
+        .six {
+            order: 6;
+        }
+        .seven {
+            order: 7;
+        }
+        .register-Change {
+            width: 90vw;
+            max-width: 380px;
+            margin-right: 0;
+        }
+        .edit-Form-Container {
+            // width: 380px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .edit-Input-Container {
+            width: 90vw;
+            max-width: none;
+        }
+        .profile-Setting-Options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                max-width: none;
+                button {
+                    max-width: none;
+                }
+            }
+        }
+        .profile-Option {
+            width: 90vw;
+            max-width: none;
+        }
+
+        .signout-Btn {
+            display: grid;
+            span,
+            div {
+                min-width: max-content;
+            }
+        }
+        .privacy-Setting {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        .profile-nav {
+            width: 90vw !important;
+        }
+    }
+}
+
+.avatar {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}

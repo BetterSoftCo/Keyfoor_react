@@ -1,0 +1,12 @@
+.parent-input {
+  position: relative;
+  .InputComponentStyle {
+    padding-right: 3rem;
+  }
+  .clean-button {
+    position: absolute;
+    top: 15%;
+    right: 1%;
+    transition: all .2s ease;
+  }
+}

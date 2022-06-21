@@ -1,0 +1,14 @@
+.Header_Title {
+    position: relative;
+    width: 100%;
+    .background {
+        border: 1px solid rgba(120, 120, 120, 0.2);
+    }
+    .color {
+        position: absolute;
+        top: -2px;
+        width: 40%;
+        border: 3px solid #00DE8E;
+        border-radius: 10px;
+    }
+}

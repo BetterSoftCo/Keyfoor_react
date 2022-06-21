@@ -1,0 +1,41 @@
+.Increase_Decrease {
+    width: 93px;
+    height: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #F3F3F3;
+    border-radius: 10px;
+    .button-minus {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#FF8A00;
+        padding: 0%;
+        .icon-minus {
+            color: #FFFFFF;
+        }
+    }
+    .button-plus {
+        width: 30px;
+        height: 30px;
+        border: none;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color:#00DE8E;
+        padding: 0%;
+        .icon-plus {
+            color: #FFFFFF;
+        }
+    }
+    .number {
+        @include TextStyleFA(auto, 17px, 300, 14px, #787878);
+        margin: auto 0;
+    }
+}

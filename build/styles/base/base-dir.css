@@ -1,0 +1,30 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "IRANYekanWeb";
+  /* clears the ‘X’ from Internet Explorer */
+  /* clears the ‘X’ from Chrome */
+}
+
+body input::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body input::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+body input::-webkit-search-decoration,
+body input::-webkit-search-cancel-button,
+body input::-webkit-search-results-button,
+body input::-webkit-search-results-decoration {
+  display: none;
+}
+/*# sourceMappingURL=base-dir.css.map */

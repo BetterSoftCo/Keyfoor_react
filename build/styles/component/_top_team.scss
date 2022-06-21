@@ -1,0 +1,97 @@
+:root {
+  --swiper-navigation-size: 17px !important;
+}
+.nextBtn {
+  display: flex;
+  padding-right: 20px;
+}
+.prevBtn {
+  display: flex;
+  padding-left: 20px;
+}
+
+.top-games-parent {
+  width: 93%;
+  .top-games-slider {
+    overflow-x: hidden;
+    padding: 20px 0;
+  }
+  .swiper-slide {
+    width: 160px !important;
+  }
+  .card-game {
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 200px;
+    min-width: 130px;
+    max-width: 140px;
+    .info {
+      min-height: 80px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-evenly;
+      .name-fa {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        color: #787878;
+      }
+      .name-en,
+      .time {
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 15px;
+        text-align: right;
+        color: #787878;
+        margin-bottom: 0.2rem;
+      }
+    }
+  }
+}
+.top-games-parent {
+  .swiper-button-next,
+  .swiper-button-prev {
+    color: #787878 !important;
+    fill: #787878 !important;
+    stroke: #787878 !important;
+    height: 26px !important;
+    width: 26px !important;
+  }
+  // .swiper-button-next {
+  // left: -26px !important;
+  // }
+  // .swiper-button-prev {
+  //   right: -26px !important;
+  // }
+  .swiper-slide {
+    margin: 0rem 0.5rem;
+  }
+}
+@media (max-width: 991.98px) {
+  .nextBtn {
+    display: none !important;
+  }
+  .prevBtn {
+    display: none !important;
+  }
+  .card-game {
+    width: 35vw;
+  }
+  .top-games-parent {
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-button-prev {
+      display: none;
+    }
+  }
+}

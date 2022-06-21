@@ -1,0 +1,37 @@
+.Image-Component {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover;
+    border: 1px solid #D6D6D6;
+    border-radius: 10px;
+    .items-image {
+        width: 100%;
+        height: 95%;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+        padding: 0 10px;
+        .rate {
+            .icon-star {
+                width: 13.38px;
+                height: 12.4px;
+                color: #FFF500;
+            }
+            .text-rate {
+                @include TextStyleEN(auto, 13px, 300, 10px, #FFF500);
+            }
+        }
+        .persons {
+            .icon-persons {
+                width: 13.38px;
+                height: 12.4px;
+            }
+            .text-persons {
+                @include TextStyleEN(auto, 13px, 300, 10px, #FFFFFF);
+            }
+        }
+    }
+}

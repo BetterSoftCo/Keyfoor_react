@@ -1,0 +1,75 @@
+.group-friends-parent {
+  height: 240px;
+  width: 90%;
+  .group-friends-slider {
+    overflow-x: hidden;
+    padding: 40px 0;
+    padding: 20px 0;
+  }
+  .swiper-slide {
+    width: 170px !important;
+  }
+  .card-friends {
+    background: #ffffff;
+    border: 1px solid #d6d6d6;
+    box-shadow: 0px 4px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 1rem 0.5rem 1rem;
+    justify-content: space-around;
+    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
+    height: 200px;
+    .card-friends-avatar {
+      border: 1px solid #d6d6d6;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon {
+        width: 30px;
+        height: 30px;
+        border: none;
+        outline: none;
+      }
+    }
+    .name {
+      font-size: 14px;
+      text-align: center;
+      color: #787878;
+    }
+  }
+
+  @media (max-width: 991.98px) {
+    .group-friends-parent {
+      .card-friends {
+        height: 139px;
+        min-width: 109px;
+        padding: 0.7rem 0.7rem 0.5rem 0.7rem;
+        .label-button {
+          min-height: 31px !important;
+        }
+        .card-friends-avatar {
+          width: 30px;
+          height: 30px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          .icon {
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .name {
+        font-size: 10px;
+      }
+    }
+  }
+}

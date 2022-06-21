@@ -1,0 +1,15 @@
+@import "./../base/mixins";
+
+.list-item {
+    > :first-child {
+        cursor: pointer;
+    }
+    .text-icon-item {
+        @include TextStyleFA(auto, 21px, 300, 16px, #ffffff);
+        cursor: pointer;
+    }
+    .active-text-icon-item {
+        @include TextStyleFA(auto, 21px, 300, 16px, #00e17f);
+        cursor: pointer;
+    }
+}

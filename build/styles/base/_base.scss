@@ -1,0 +1,27 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  font-family: "IRANYekanWeb";
+  /* clears the ‘X’ from Internet Explorer */
+  input::-ms-clear {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  input::-ms-reveal {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+  /* clears the ‘X’ from Chrome */
+  input::-webkit-search-decoration,
+  input::-webkit-search-cancel-button,
+  input::-webkit-search-results-button,
+  input::-webkit-search-results-decoration {
+    display: none;
+  }
+}
+

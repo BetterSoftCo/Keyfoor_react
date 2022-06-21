@@ -1,0 +1,265 @@
+@import "../base/mixins";
+
+.group-Options {
+    width: 100%;
+
+    label {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: right;
+        color: #787878;
+        margin-bottom: 5px;
+    }
+
+    .group-Name {
+        div {
+            height: 100px;
+            background: #fafafa;
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+        }
+        input {
+            @include InputStyle;
+            width: 100%;
+            border: none;
+            outline: none;
+            &:last-child {
+                border-top: 1px solid rgba(214, 214, 214, 0.5);
+            }
+        }
+    }
+    .input-Container {
+        div {
+            height: 50px;
+            background: #fafafa;
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+        }
+        input,
+        textarea {
+            @include InputStyle;
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 0 5px;
+            &:last-child {
+                border-top: 1px solid rgba(214, 214, 214, 0.5);
+            }
+        }
+    }
+    .textarea {
+        max-width: 380px;
+
+        div {
+            height: 200px;
+            background: #fafafa;
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+        }
+        textarea {
+            @include InputStyle;
+            border-radius: 10px;
+            height: 100%;
+            width: 100%;
+
+            border: none;
+            outline: none;
+            padding: 10px 5px;
+        }
+    }
+    .select-Game {
+        width: 100%;
+        select {
+            @include InputStyle;
+            width: 100%;
+            height: 50px;
+            left: calc(50% - 380px / 2);
+            top: 478px;
+            background: #fafafa;
+            background-image: url(../../assets/images/icons/arrow-down-black.svg);
+            background-repeat: no-repeat;
+            background-position: calc(100% - 3px) center;
+            border: 1px solid #d6d6d6;
+            border-radius: 10px;
+            -webkit-appearance: none;
+            -moz-appearance: none;
+            padding: 0 40px;
+            option {
+                width: 100%;
+                max-width: 380px;
+                font-family: "IRANYekanWeb";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: right;
+                color: #787878;
+            }
+        }
+    }
+    .increment-Btn {
+        width: 30px;
+        height: 30px;
+        background-color: #00de8e;
+        border-radius: 10px;
+        color: #ffffff !important;
+        font-weight: 900 !important;
+        font-size: 20px !important;
+    }
+    .decrement-Btn {
+        width: 30px;
+        height: 30px;
+        background-color: #ff8a00;
+        border-radius: 10px;
+        color: #ffffff !important;
+        font-weight: 900 !important;
+        font-size: 20px !important;
+    }
+    .room-Capacity {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: right;
+        color: #787878;
+    }
+    .toggle {
+        input[type="checkbox"] {
+            height: 0;
+            width: 0;
+            visibility: hidden;
+        }
+
+        label {
+            cursor: pointer;
+            text-indent: -9999px;
+            background-color: #ffffff;
+            width: 37px;
+            height: 20px;
+            display: block;
+            border: 1px solid #f3f3f3;
+            border-radius: 100px;
+            position: relative;
+        }
+
+        label:after {
+            content: "";
+            position: absolute;
+            background-color: #00de8e;
+            top: -1px;
+            left: 1px;
+            width: 20px;
+            height: 20px;
+            border-radius: 90px;
+            transition: 0.5s;
+        }
+
+        input:checked + label {
+            background: #ffffff;
+        }
+
+        input:checked + label:after {
+            background-color: #ff8a00;
+            left: calc(100% - 1px);
+            transform: translateX(-100%);
+        }
+
+        label:active:after {
+            width: 30px;
+        }
+    }
+    .next-Step-Btn {
+        width: 183px;
+        height: 50px;
+        background: #00de8e;
+        box-shadow: 0px 0px 20px rgba(0, 222, 142, 0.5);
+        border-radius: 10px;
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+    }
+}
+
+.add-Avatar-Group {
+    border: 1px solid #d6d6d6;
+    padding: 25px;
+    border-radius: 50%;
+}
+.setting-Tabs {
+    width: 90vw;
+    max-width: 380px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.group-tabs {
+    width: 100%;
+    max-width: 380px;
+    max-height: 750px;
+    overflow-y: scroll;
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+    &::-webkit-scrollbar {
+        display: none;
+    }
+
+    .friends {
+        border-bottom: 1px solid rgba(120, 120, 120, 0.2);
+        .user-avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .name {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #787878;
+        }
+        .username {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 300;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: right;
+            color: #787878;
+        }
+    }
+    .create-Room-Btn {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 20px;
+        text-align: center;
+        color: #ffffff;
+        background: #00de8e;
+        box-shadow: 0px 0px 20px rgba(0, 222, 142, 0.5);
+        border-radius: 10px;
+        width: 183px;
+        height: 50px;
+        position: sticky;
+        bottom: 0;
+    }
+}
+@media (max-width: 480px) {
+    .group-Options {
+        padding: 0 10px;
+    }
+}

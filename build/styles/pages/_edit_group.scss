@@ -1,0 +1,169 @@
+.edit-Form-Container {
+    @media (max-width: 991px) {
+        width: 100%;
+        padding-bottom: 60px;
+        .user-Info {
+            display: flex;
+            max-width: none;
+        }
+        .user-Info-Desctop {
+            display: none;
+        }
+        .change-Profile {
+            margin: 30px 0;
+        }
+        .active-Sessions {
+            max-width: none;
+        }
+        .one {
+            order: 1;
+        }
+        .two {
+            order: 2;
+        }
+        .three {
+            order: 3;
+        }
+        .four {
+            order: 4;
+        }
+        .five {
+            order: 5;
+        }
+        .six {
+            order: 6;
+        }
+        .seven {
+            order: 7;
+        }
+        .register-Change {
+            width: 90vw;
+            max-width: 380px;
+            margin-right: 0;
+        }
+        .edit-Form-Container {
+            // width: 380px !important;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .edit-Input-Container {
+            width: 90vw;
+            max-width: none;
+        }
+        .profile-Setting-Options {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            a {
+                max-width: none;
+                button {
+                    max-width: none;
+                }
+            }
+        }
+        .profile-Option {
+            width: 90vw;
+            max-width: none;
+        }
+
+        .signout-Btn {
+            display: grid;
+            span,
+            div {
+                min-width: max-content;
+            }
+        }
+        .privacy-Setting {
+            flex-direction: column !important;
+            align-items: center !important;
+        }
+        .profile-nav {
+            width: 90vw !important;
+        }
+    }
+    width: 100% !important;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 20px;
+    max-width: 800px;
+    input {
+        &::placeholder {
+            padding: 15px;
+        }
+    }
+    .input-text {
+        &::placeholder {
+            text-align: left;
+        }
+    }
+    select {
+        padding: 15px;
+    }
+    label {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: #787878;
+    }
+}
+.profile-Options {
+    grid-template-columns: 1fr;
+}
+.edit-Input-Container {
+    background: #fafafa;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    width: 35vw;
+    max-width: 380px;
+    .edit-Input {
+        @include InputStyle;
+    }
+    .edit-Input-2 {
+        @include InputStyle;
+        border-top: 1px solid rgba(214, 214, 214, 0.5);
+    }
+}
+.room-botton {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 380px;
+    height: 50px;
+    border: none;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00de8e;
+    box-shadow: 0px 0px 20px rgba(0, 222, 142, 0.5);
+    .text-button {
+        @include TextStyleFA(auto, auto, 700, 14px, #ffffff);
+        margin: 0;
+    }
+}
+.textarea {
+    width: 100%;
+    height: 207px;
+    margin: 0 auto;
+    border: 1px solid #d6d6d6;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fafafa;
+    resize: none;
+    &::placeholder {
+        @include TextStyleFA(auto, auto, 300, 14px, #787878);
+    }
+    &:focus {
+        outline: none;
+    }
+}
+@media (max-width: 991.98px) {
+    .room-botton {
+        position: fixed;
+        top: 78%;
+        right: 25%;
+    }
+}

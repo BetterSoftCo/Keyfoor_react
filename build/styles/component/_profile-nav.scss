@@ -1,0 +1,45 @@
+.profile-nav {
+    max-width: 840px;
+    width: 75vw !important;
+    height: 50px;
+    background-color: #fafafa;
+    border-radius: 10px;
+    .space {
+        min-width: 100px;
+    }
+    .nav-text {
+        font-family: "IRANYekanWeb";
+        font-style: normal;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 17px;
+        text-align: center;
+        color: #787878;
+        // margin-right: 300px;
+    }
+    a {
+        right: 1px;
+        text-decoration: none;
+        width: 100px;
+    }
+    img {
+        filter: brightness(0) saturate(100%) invert(0%) sepia(8%) saturate(25%) hue-rotate(266deg) brightness(93%)
+            contrast(101%);
+    }
+}
+@media (max-width: 991.98px) {
+    .profile-nav {
+        max-width: none;
+        a {
+            width: 40px;
+        }
+    }
+    .space {
+        min-width: 40px !important;
+        max-width: 40px;
+    }
+
+    .return-Text {
+        display: none;
+    }
+}

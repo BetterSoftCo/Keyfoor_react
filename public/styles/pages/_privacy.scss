@@ -1,0 +1,91 @@
+.privacy {
+    .edit-Form-Container {
+        max-width: 380px !important;
+    }
+}
+.room-privacy {
+    width: 100%;
+    height: fit-content;
+    border-radius: 50px;
+    background-color: #ffffff;
+    .edit-Form-Container {
+        max-width: none;
+    }
+    &-header {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+
+        .profile-nav {
+            width: 90% !important;
+        }
+    }
+
+    .divider {
+        width: 90%;
+        height: 1px;
+        background-color: #78787833;
+        margin: -10px auto 0 auto;
+        max-width: 840px;
+    }
+
+    &-content {
+        width: 90%;
+        margin: 0 auto;
+        max-width: 840px;
+        .radio-Btn {
+            width: 20px;
+            height: 20px;
+            background-color: #f3f3f3;
+            border: 1px solid #d6d6d6;
+            border-radius: 50%;
+            cursor: pointer;
+        }
+
+        .active-Radio {
+            background-color: #00de8e;
+            box-shadow: 0px 0px 10px rgba(0, 222, 142, 0.5);
+            cursor: pointer;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+        }
+
+        .active-label {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #00de8e;
+        }
+
+        .radio-Label {
+            font-family: "IRANYekanWeb";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 12px;
+            line-height: 17px;
+            text-align: center;
+            color: #787878;
+        }
+
+        .radio-desc {
+            margin-right: 35px;
+
+            span {
+                font-family: "IRANYekanWeb";
+                font-style: normal;
+                font-weight: 300;
+                font-size: 12px;
+                line-height: 17px;
+                text-align: justify;
+                color: #787878;
+            }
+        }
+    }
+}
+a {
+    text-decoration: none !important;
+}

@@ -1,0 +1,46 @@
+$color-grey-1: #999999;
+$color-grey-2: #3d3d3d;
+$color-white-1: #ffffff;
+
+.avatar-container {
+  width: auto;
+  margin: 10px 10px;
+  position: relative;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  direction: ltr;
+}
+
+.avatar-container-item {
+  background: $color-grey-1;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 3px solid $color-white-1;
+  margin-left: -10px;
+  transition: 0.7s all ease-in-out;
+  transform: scale(1);
+  img {
+    vertical-align: middle;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+  }
+  &:hover {
+    background: lighten($color-grey-2, 50%);
+    cursor: pointer;
+    transform: scale(1.5);
+    z-index: 2;
+  }
+}
+@media (max-width: 991.98px) {
+  .avatar-container-item {
+    width: 30px;
+    height: 30px;
+    img {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
